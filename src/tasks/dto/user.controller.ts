@@ -21,8 +21,8 @@ import { User } from 'src/auth/user.entity';
 import { update_self_dto } from './update_self_dto';
 import { Logs } from '../logs.entity';
 import { AuthService } from 'src/auth/auth.service';
-
-@Controller('user') 
+// redirecting to the '/' default path
+@Controller('/') 
 export class TasksController {
   constructor(private userService: UserService) {}
 
